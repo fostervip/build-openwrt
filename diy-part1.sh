@@ -21,6 +21,7 @@
 # Test! Add a feed source ...
 #echo 'src-git kenzo https://github.com/66o99/openwrt-packages' >>feeds.conf.default
 #echo 'src-git small https://github.com/66o99/small' >>feeds.conf.default
+#检查 feeds.conf.default 的最后一个字符是否为换行符。如果不是，则追加一个空行。最后添加目标内容
 sed -i "/helloworld/d" "feeds.conf.default"
 if [ "$(tail -c1 feeds.conf.default)" != "" ]; then
     echo "" >> "feeds.conf.default"
