@@ -2,7 +2,7 @@
 # https://github.com/quanjindeng/Actions_OpenWrt
 #
 
-name: Build OpenWrt-JDC-AX1800+NSS
+name: Build test LiBwrt
 
 on:
   repository_dispatch:
