@@ -26,5 +26,6 @@ sed -i "/helloworld/d" "feeds.conf.default"
 if [ "$(tail -c1 feeds.conf.default)" != "" ]; then
     echo "" >> "feeds.conf.default"
 fi
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+echo "src-git small https://github.com/kenzok8/small.git" >> "feeds.conf.default"
+#echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
