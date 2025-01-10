@@ -2,7 +2,7 @@
 # https://github.com/quanjindeng/Actions_OpenWrt
 #
 
-name: Build OpenWrt-JDC-AX1800+NSStest
+name: Build Lede YDN
 
 on:
   repository_dispatch:
@@ -11,7 +11,7 @@ on:
  #   - cron: 0 16 4,9,14,19,24,28,31 * *
 
 env:
-  REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
+  REPO_URL: https://github.com/coolsnowwolf/lede
 # REPO_URL: https://github.com/china-temps/openwrt.git
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
