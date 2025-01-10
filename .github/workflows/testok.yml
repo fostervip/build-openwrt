@@ -7,6 +7,10 @@ name: Build Lede YDN
 on:
   repository_dispatch:
   workflow_dispatch:
+  ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
  # schedule:
  #   - cron: 0 16 4,9,14,19,24,28,31 * *
 
